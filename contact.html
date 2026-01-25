@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Form</title>
+</head>
+
+<body>
+  <div class="carrier">
+
+    <h1 class="small-screen-navbar" style="padding-left: 1rem;">
+      <a href="small-screen-navbar.html"><img src="icon-hamburger.svg"></a>
+    </h1>
+
+    <header>
+      <div class="container container-flex">
+        <div class="site-title">
+          <div class="xyz-carrier">
+            <h2 class="xyz">XYZ</h2>
+          </div>
+          <h1 class="start">Living The Simple Life With Coding</h1>
+          <p class="start-2">
+            I know it’s a way to 
+            <strong style="color: hsl(332, 51%, 32%);">earn</strong> money without stress
+          </p>
+          <p class="subtitle">WEBSITE DEVELOPMENT.</p>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html" class="current-page">Home</a></li>
+            <li><a href="about me.html" class="aboutme">About me</a></li>
+            <li><a href="contact.html" class="contact">Contact</a></li>
+            <li><a href="Coding-note.docx" class="notes">View Notes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h2 style="color: yellow; text-align: center;">
+      No worries! When you click "GO" you will see a message telling you where this page is taking you.
+    </h2>
+
+    <!-- GO BUTTON -->
+    <button class="Go-btn" onclick="goToFacebook()">GO</button>
+
+    <hr>
+
+    <div class="contact-use" style="text-align: center; line-height: normal;">
+      <h2 style="color: deeppink;">Contact For:</h2>
+      <p>Comment on the website</p>
+      <p>For Donations</p>
+      <p>Have a job for me (company or personal website)</p>
+      <p>Have a project you want us to work together on</p>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function goToFacebook() {
+      const alertMessage =
+        'You are about to be taken to my Facebook Messenger.\n\n' +
+        'Please message me with:\n' +
+        '"I got to message you through your CV."\n\n' +
+        'Click OK to continue or Cancel to stay on this page.';
+
+      const decision = confirm(alertMessage);
+
+      if (decision) {
+        // Facebook Messenger link
+        window.location.href = "https://www.facebook.com/messages/t/coderack%20codejungle";
+      }
+      // If Cancel is clicked, nothing happens (stays on contact.html)
+    }
+  </script>
+
+</body>
+</html>
