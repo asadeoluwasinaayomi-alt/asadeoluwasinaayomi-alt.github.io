@@ -57,12 +57,12 @@
     </div>
 
   </div>
-
+  
 <!-- SCRIPT -->
 <script>
   function goToFacebook() {
     const alertMessage =
-      'You are about to be taken to my Facebook page.\n\n' +
+      'You are about to be taken to my Facebook page-message.\n\n' +
       'Please message me with:\n' +
       '"I got to message you through your CV."\n\n' +
       'Click OK to continue or Cancel to stay on this page.';
@@ -70,12 +70,12 @@
     const decision = confirm(alertMessage);
 
     if (decision) {
-      // Facebook Messenger link
-      window.location.href = "https://m.me/Code Jungle?text=I got to message you through your CV)";
+      // Correct Facebook Messenger link
+      window.location.href = "https://m.me/codejungle?text=I%20got%20to%20message%20you%20through%20your%20CV";
     }
-    // If Cancel is clicked, nothing happens (stays on contact.html)
   }
 </script>
+
 
 
 
